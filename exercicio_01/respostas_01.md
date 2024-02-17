@@ -1,6 +1,6 @@
 ## Exercício 01 - Respostas
 
-[**1. Qual a diferença entre objetos e classes? Exemplifique.**](color:blue)
+[**1. Qual a diferença entre objetos e classes? Exemplifique.**](color: blue)
 
 **Classe** é algo abstrato, lógico. Onde estão definidos todos os elementos e características. A classe tipifica o que será modelado por ela. Ela determina os estados possíveis e os comportamentos que os objetos podem ter. 
 
@@ -124,8 +124,7 @@ console.log (`O Saldo é: ${pessoa.saldo()}`);
 Circulo
 :-----:
 raio:number
-calcularArea()
-calcularPerimetro()
+calcularArea()<br/>calcularPerimetro()
 
 SituaçãoFinanceira
 :-----:
