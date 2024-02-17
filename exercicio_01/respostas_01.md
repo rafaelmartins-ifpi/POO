@@ -10,6 +10,7 @@ Assim, o objeto é uma instância da classe. Na classe você pode dizer que aque
 
 Exemplificação: Planta (classe) – Casa construída (objeto)
 
+<br/>
 
 **2. De forma breve, conceitue atributos e métodos. Pesquise e exemplifique um exemplo de objeto que possua atributos e métodos (notação livre).**
 
@@ -17,6 +18,7 @@ Exemplificação: Planta (classe) – Casa construída (objeto)
 
 **Métodos** são as ações que os objetos podem exercer quando solicitados, onde podem interagir e se comunicarem com outros objetos, utilizando o exemplo dos cães, temos alguns exemplos: latir, correr, pular.
 
+<br/>
 
 **3. A abstração visa focar no que é importante para um sistema. Você concorda que um atributo de uma pessoa pode ser importante ou não dependendo do contexto do sistema. Enumere na tabela abaixo contextos/sistemas distintos em que os atributos abaixo seriam relevantes:**
 
@@ -32,17 +34,20 @@ Raça | Banco | Futebol | Concurso
 
 Sim. Para saber o titular daquela conta específica.
 
+<br/>
 
 **b. Olhando no sentido inverso, seria interessante uma pessoa possuir mais de uma conta como atributo? Que elemento da programação estruturada melhor representaria o conjunto de contas de uma pessoa?** 
  
 Sim. Pois uma pessoa pode ser titular de mais de uma conta. 
 Nesse caso, poderia ser modelado um atributo contendo o conjunto de contas pertencentes àquela pessoa, com a utilização de “lista”, “array”, “vetor”.
 
+<br/>
 
 **5. Identifique pelo menos 5 objetos de um sistema de controle acadêmico. Ex: aluno.**
 
 Professor, Notas, Disciplina, Aluno, Curso etc.
 
+<br/>
 
 **6. Imagine um jogo qualquer. Identifique o máximo de objetos possíveis e eventuais características (atributos) e comportamentos (métodos) que os mesmos poderiam ter.**
 
@@ -52,6 +57,7 @@ Jogador | peso, altura, força, velocidade | chutar, correr, efetuar passe
 Árbitro | nacionalidade, resitência, experiência | acompanhar lance, marcar falta, aplica cartões
 Clube | bandeira, hino, cores, arrecadação, gastos, jogadores | comprar e vender jogadores, realizar transações 
 
+<br/>
 
 **7. Considerando o exemplo da classe Retangulo dos slides, implemente um método adicional chamado que calcule o perímetro do retângulo. Teste os métodos do retângulo.**
 
@@ -75,6 +81,7 @@ console.log(r1);
 r1.exibirPerimetro();
 ~~~
 
+<br/>
 
 **8. Crie uma classe Circulo que possua um atributo raio. Crie dois métodos que calculam a área e o perímetro. Instancie um objeto dessa classe, atribua um valor ao raio e exiba a área e o perímetro chamando os dois métodos definidos.**
 
@@ -98,6 +105,7 @@ concole.log (`Área: ${c1.exibirArea()}`);
 console.log (`Perímetro: ${c1.exibirPerimetro()}`);
 ~~~
 
+<br/>
 
 **9. Crie uma classe chamada SituacaoFinanceira com os atributos valorCreditos e valorDebitos. Crie um método chamado calcularSaldo() que retorna/calcula a diferença entre crédito e débito. Instancie uma classe SituacaoFinanceira, inicialize os dois atributos e exiba o resultado do método calcularSaldo().**
 
@@ -118,6 +126,7 @@ pessoa.valorDebitos = 2365.78;
 console.log (`O Saldo é: ${pessoa.saldo()}`);
 ~~~
 
+<br/>
 
 **10. Represente as classes das questões 8 e 9 no formato UML. Pesquise uma ferramenta on line.** 
 
@@ -128,6 +137,5 @@ calcularArea()<br/>calcularPerimetro()
 
 SituaçãoFinanceira
 :-----:
-valorCreditos: number
-valorDebitos: number
+valorCreditos: number<br/>valorDebitos: number
 calcularSaldo()
