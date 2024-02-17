@@ -1,6 +1,6 @@
 ## Exercício 01 - Respostas
 
-[**1. Qual a diferença entre objetos e classes? Exemplifique.**](color: Blue)
+[**1. Qual a diferença entre objetos e classes? Exemplifique.**] ("color: Blue")
 
 **Classe** é algo abstrato, lógico. Onde estão definidos todos os elementos e características. A classe tipifica o que será modelado por ela. Ela determina os estados possíveis e os comportamentos que os objetos podem ter. 
 
@@ -8,7 +8,7 @@
 
 Assim, o objeto é uma instância da classe. Na classe você pode dizer que aquele objeto terá uma cor, no objeto você diz qual é a cor, só pode dizer isso porque foi definido na classe que essa informação deve estar no objeto.
 
-Exemplificação: Planta (classe) – Casa construída (objeto)
+Exemplificação: Planta (classe) – Casa construída (objeto)  
 
 <br/>
 
