@@ -1,6 +1,6 @@
 ## Exercício 01 - Respostas
 
-[**1. Qual a diferença entre objetos e classes? Exemplifique.**](color: blue)
+[**1. Qual a diferença entre objetos e classes? Exemplifique.**]("color: blue")
 
 **Classe** é algo abstrato, lógico. Onde estão definidos todos os elementos e características. A classe tipifica o que será modelado por ela. Ela determina os estados possíveis e os comportamentos que os objetos podem ter. 
 
@@ -28,8 +28,10 @@ Peso | Detran | Vacina | Academia
 Tipo Sanguíneo | Biblioteca | Escola | Hospital
 Raça | Banco | Futebol | Concurso
 
+<br/>
 
  **4. Considerando os objetos Pessoa e Conta:**
+
 **a. Seria interessante em um sistema bancário um objeto "conta" possuir uma "pessoa" como um atributo interno representando o titular da conta?**  
 
 Sim. Para saber o titular daquela conta específica.
