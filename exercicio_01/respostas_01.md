@@ -13,7 +13,7 @@ Exemplificação: Planta (classe) – Casa construída (objeto)
 
 <br/>
 
-**2. De forma breve, conceitue atributos e métodos. Pesquise e exemplifique um exemplo de objeto que possua atributos e métodos (notação livre).**
+### 2. De forma breve, conceitue atributos e métodos. Pesquise e exemplifique um exemplo de objeto que possua atributos e métodos (notação livre).
 
 **Atributos** são as características de um objeto, essas características também são conhecidas como variáveis, utilizando o exemplo dos cães, temos alguns atributos, tais como: cor, peso, altura e nome.
 
@@ -21,7 +21,7 @@ Exemplificação: Planta (classe) – Casa construída (objeto)
 
 <br/>
 
-**3. A abstração visa focar no que é importante para um sistema. Você concorda que um atributo de uma pessoa pode ser importante ou não dependendo do contexto do sistema. Enumere na tabela abaixo contextos/sistemas distintos em que os atributos abaixo seriam relevantes:**
+### 3. A abstração visa focar no que é importante para um sistema. Você concorda que um atributo de uma pessoa pode ser importante ou não dependendo do contexto do sistema. Enumere na tabela abaixo contextos/sistemas distintos em que os atributos abaixo seriam relevantes:
 
 Atributo | Sistema em que não é importante | Sistema em que é mais ou menos importante | Sistema em que é importante
 :------: | :------: | :------: | :------:
@@ -31,28 +31,28 @@ Raça | Banco | Futebol | Concurso
 
 <br/>
 
-**4. Considerando os objetos Pessoa e Conta:**
+### 4. Considerando os objetos Pessoa e Conta:
 
-**a. Seria interessante em um sistema bancário um objeto "conta" possuir uma "pessoa" como um atributo interno representando o titular da conta?**  
+### a. Seria interessante em um sistema bancário um objeto "conta" possuir uma "pessoa" como um atributo interno representando o titular da conta?
 
 Sim. Para saber o titular daquela conta específica.
 
 <br/>
 
-**b. Olhando no sentido inverso, seria interessante uma pessoa possuir mais de uma conta como atributo? Que elemento da programação estruturada melhor representaria o conjunto de contas de uma pessoa?** 
+### b. Olhando no sentido inverso, seria interessante uma pessoa possuir mais de uma conta como atributo? Que elemento da programação estruturada melhor representaria o conjunto de contas de uma pessoa? 
  
 Sim. Pois uma pessoa pode ser titular de mais de uma conta. 
 Nesse caso, poderia ser modelado um atributo contendo o conjunto de contas pertencentes àquela pessoa, com a utilização de “lista”, “array”, “vetor”.
 
 <br/>
 
-**5. Identifique pelo menos 5 objetos de um sistema de controle acadêmico. Ex: aluno.**
+### 5. Identifique pelo menos 5 objetos de um sistema de controle acadêmico. Ex: aluno.
 
 Professor, Notas, Disciplina, Aluno, Curso etc.
 
 <br/>
 
-**6. Imagine um jogo qualquer. Identifique o máximo de objetos possíveis e eventuais características (atributos) e comportamentos (métodos) que os mesmos poderiam ter.**
+### 6. Imagine um jogo qualquer. Identifique o máximo de objetos possíveis e eventuais características (atributos) e comportamentos (métodos) que os mesmos poderiam ter.
 
 Objeto | Atributos | Métodos
 :-----: | :-----: | :-----:
@@ -62,7 +62,7 @@ Clube | bandeira, hino, cores, arrecadação, gastos, jogadores | comprar e vend
 
 <br/>
 
-**7. Considerando o exemplo da classe Retangulo dos slides, implemente um método adicional chamado que calcule o perímetro do retângulo. Teste os métodos do retângulo.**
+### 7. Considerando o exemplo da classe Retangulo dos slides, implemente um método adicional chamado que calcule o perímetro do retângulo. Teste os métodos do retângulo.
 
 ~~~TypeScript
 class Retangulo {
@@ -86,7 +86,7 @@ r1.exibirPerimetro();
 
 <br/>
 
-**8. Crie uma classe Circulo que possua um atributo raio. Crie dois métodos que calculam a área e o perímetro. Instancie um objeto dessa classe, atribua um valor ao raio e exiba a área e o perímetro chamando os dois métodos definidos.**
+### 8. Crie uma classe Circulo que possua um atributo raio. Crie dois métodos que calculam a área e o perímetro. Instancie um objeto dessa classe, atribua um valor ao raio e exiba a área e o perímetro chamando os dois métodos definidos.
 
 ~~~TypeScript
 class Circulo {
@@ -110,7 +110,7 @@ console.log (`Perímetro: ${c1.exibirPerimetro()}`);
 
 <br/>
 
-**9. Crie uma classe chamada SituacaoFinanceira com os atributos valorCreditos e valorDebitos. Crie um método chamado calcularSaldo() que retorna/calcula a diferença entre crédito e débito. Instancie uma classe SituacaoFinanceira, inicialize os dois atributos e exiba o resultado do método calcularSaldo().**
+### 9. Crie uma classe chamada SituacaoFinanceira com os atributos valorCreditos e valorDebitos. Crie um método chamado calcularSaldo() que retorna/calcula a diferença entre crédito e débito. Instancie uma classe SituacaoFinanceira, inicialize os dois atributos e exiba o resultado do método calcularSaldo().
 
 ~~~TypeScript
 class SituacaoFinanceira {
@@ -131,14 +131,14 @@ console.log (`O Saldo é: ${pessoa.saldo()}`);
 
 <br/>
 
-**10. Represente as classes das questões 8 e 9 no formato UML. Pesquise uma ferramenta on line.** 
+### 10. Represente as classes das questões 8 e 9 no formato UML. Pesquise uma ferramenta on line.
 
-Circulo
+**Circulo**
 :-----:
 raio:number
 calcularArea()<br/>calcularPerimetro()
 
-SituaçãoFinanceira
+**SituaçãoFinanceira**
 :-----:
 valorCreditos: number<br/>valorDebitos: number
 calcularSaldo()
