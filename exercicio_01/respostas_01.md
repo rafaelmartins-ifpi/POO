@@ -21,34 +21,38 @@ Exemplificação: Planta (classe) – Casa construída (objeto)
 
 <br/>
 
-### 3. A abstração visa focar no que é importante para um sistema. Você concorda que um atributo de uma pessoa pode ser importante ou não dependendo do contexto do sistema. Enumere na tabela abaixo contextos/sistemas distintos em que os atributos abaixo seriam relevantes:
+### 3. A abstração visa focar no que é importante para um sistema. Você concorda que um atributo de uma sf pode ser importante ou não dependendo do contexto do sistema. Enumere na tabela abaixo contextos/sistemas distintos em que os atributos abaixo seriam relevantes:
 
 Atributo | Sistema em que não é importante | Sistema em que é mais ou menos importante | Sistema em que é importante
 :------: | :------: | :------: | :------:
-Peso | Detran | Vacina | Academia
-Tipo Sanguíneo | Biblioteca | Escola | Hospital
-Raça | Banco | Futebol | Concurso
+Peso | Detran, Biblioteca | Estoque | Academia, Nutrição
+Tipo de CNH | Acadêmico, Escolinha de Futebol, Rede Social | Exército, Cadastro Civil no Geral | Detran, Locadora de Veículos, empresa de ônibus
+Tipo Sanguíneo | Bancário, Estoque | Concurso, Educacional | Emopi, Hospitalar, Exército
+Habilidade Destra | Acadêmico | Escola de Música| Controle Desportivo (futebol, tênis)  
+Percentual de Gordura | Bancário, Rede Social | Teste de aptidão física | Academia, Hospitalar
+Saldo em conta | Acadêmico, EMOPI | rede Social | Jogos, Bancário, Venda
+Etinia | Ifood, entregas, comércio eletrônico | Rede Social | Censo Demográfico, Processo Seletivo
 
 <br/>
 
-### 4. Considerando os objetos Pessoa e Conta:
+### 4. Considerando os objetos sf e Conta:
 
-### a. Seria interessante em um sistema bancário um objeto "conta" possuir uma "pessoa" como um atributo interno representando o titular da conta?
+### a. Seria interessante em um sistema bancário um objeto "conta" possuir uma "sf" como um atributo interno representando o titular da conta?
 
 Sim. Para saber o titular daquela conta específica.
 
 <br/>
 
-### b. Olhando no sentido inverso, seria interessante uma pessoa possuir mais de uma conta como atributo? Que elemento da programação estruturada melhor representaria o conjunto de contas de uma pessoa? 
+### b. Olhando no sentido inverso, seria interessante uma sf possuir mais de uma conta como atributo? Que elemento da programação estruturada melhor representaria o conjunto de contas de uma sf? 
  
-Sim. Pois uma pessoa pode ser titular de mais de uma conta. 
-Nesse caso, poderia ser modelado um atributo contendo o conjunto de contas pertencentes àquela pessoa, com a utilização de “lista”, “array”, “vetor”.
+Sim. Pois uma sf pode ser titular de mais de uma conta. 
+Nesse caso, poderia ser modelado um atributo contendo o conjunto de contas pertencentes àquela sf, com a utilização de  “array”.
 
 <br/>
 
 ### 5. Identifique pelo menos 5 objetos de um sistema de controle acadêmico. Ex: aluno.
 
-Professor, Notas, Disciplina, Aluno, Curso etc.
+Professor, Turma, Disciplina, Coordenador, Aluno, Sala etc.
 
 <br/>
 
@@ -66,22 +70,22 @@ Clube | bandeira, hino, cores, arrecadação, gastos, jogadores | comprar e vend
 
 ~~~TypeScript
 class Retangulo {
-    lado1: number = 0;
-    lado2: number = 0;
+    l1: number = 0;
+    l2: number = 0;
 
     calcularArea(): number {
         return this.l1 * this.l2;
+    }
     
     calcularPerimetro(): number {
-        return (this.lado1 + this.lado2)*2;
+        return (this.l1 + this.l2)*2;
     }
 }
 
-let r1: Retangulo = new Retangulo();
-r1.lado1 = 4;
-r1.lado2 = 8;
-console.log(r1);
-r1.exibirPerimetro();
+let r: Retangulo = new Retangulo();
+r.l1 = 4;
+r.l2 = 8;
+console.log(r.calcularPerimetro());
 ~~~
 
 <br/>
@@ -91,21 +95,22 @@ r1.exibirPerimetro();
 ~~~TypeScript
 class Circulo {
     raio: number = 0;
+    pi: number = 3.1415;
     
-    calcularArea() {
-        return 3.1415 * this.raio * this.raio;
+    calcularArea(): number {
+        return this.pi * this.raio * this.raio;
     }
 
-    calcularPerimetro() {
-        return 2 * 3.1415 * this.raio;
+    calcularPerimetro(): number {
+        return 2 * this.pi * this.raio;
     }
 }
 
-let c1: Circulo = new Circulo();
-c1.raio = 4;
+let c: Circulo = new Circulo();
+c.raio = 4;
 
-concole.log (`Área: ${c1.exibirArea()}`);
-console.log (`Perímetro: ${c1.exibirPerimetro()}`);
+console.log (`Área: ${c.calcularArea()}`);
+console.log (`Perímetro: ${c.calcularPerimetro()}`);
 ~~~
 
 <br/>
@@ -122,16 +127,19 @@ class SituacaoFinanceira {
     }
 }
 
-let pessoa: SituacaoFinanceira = new SituacaoFinanceira();
-pessoa.valorCreditos = 5678.63;
-pessoa.valorDebitos = 2365.78;
+let sf: SituacaoFinanceira = new SituacaoFinanceira();
+sf.valorCreditos = 250.50;
+sf.valorDebitos = 100.50;
 
-console.log (`O Saldo é: ${pessoa.saldo()}`);
+console.log (`O Saldo é: ${sf.calcularSaldo()}`);
 ~~~
 
 <br/>
 
 ### 10. Represente as classes das questões 8 e 9 no formato UML. Pesquise uma ferramenta on line.
+
+Sugestões de Ferramentas: draw.io, plantuml, lucidchart
+
 
 **Circulo**
 :-----:
