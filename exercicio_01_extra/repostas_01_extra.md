@@ -25,7 +25,7 @@
 [] b. classe, atributo e objeto;  
 [] c. classe, objeto e atributo;  
 [] d. objeto, atributo e classe;  
-[] e. objeto, classe e atributo.  
+[x] e. objeto, classe e atributo.  
 
 ### 4. Dada a construção abaixo, associe os números ao elemento correspondente:
 
