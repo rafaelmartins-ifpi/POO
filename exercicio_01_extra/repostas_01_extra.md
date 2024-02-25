@@ -50,11 +50,11 @@ let conta: Conta = new Conta();
       1      2      3    4
 ~~~
 
-(   ) Construtor
-( 3 ) Operador de instanciação
-( 4 ) Classe
-( 1 ) Objeto
-( 2 ) Tipo da variável
+(   ) Construtor  
+( 3 ) Operador de instanciação  
+( 4 ) Classe  
+( 1 ) Objeto  
+( 2 ) Tipo da variável  
 
 <br>
 
