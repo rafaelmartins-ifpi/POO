@@ -27,7 +27,7 @@ Construtor
 
 ( V ) Atributos definem o estado de um objeto;
 
-( V ) Métodos podem ser análogos às funções e em TypeScript e podem ser escritos dentro ou fora da classe, como em C++;
+( F ) Métodos podem ser análogos às funções e em TypeScript e podem ser escritos dentro ou fora da classe, como em C++;
 
 ( F ) Podemos ignorar o uso de tipos em TypeScript.
 
@@ -50,11 +50,10 @@ let conta: Conta = new Conta();
       1      2      3    4
 ~~~
 
-(   ) Construtor  
+( 4 ) Construtor  
 ( 3 ) Operador de instanciação  
-( 4 ) Classe  
+( 2 ) Classe  
 ( 1 ) Objeto  
-( 2 ) Tipo da variável  
 
 <br>
 
@@ -70,13 +69,13 @@ class ControleDeAudio {
     private _volume: number = 2;
 
     aumentarVolume(): void {
-        if (this._volume <= 9) {
+        if (this._volume < 10) {
             this._volume += 1;                
         }
     }
 
     diminuirVolume (): void {
-        if (this._volume >= 1){
+        if (this._volume > 0){
             this._volume -= 1;
         }
     }
@@ -91,7 +90,7 @@ class ControleDeAudio {
 
 ### 6. Implemente a questão acima em outra linguagem que não seja TypeScript.  
 
-em Python  
+Python (convertido pelo chat GPT)  
 
 ~~~Python
 class ControleDeAudio:
@@ -129,11 +128,12 @@ class Retangulo {
     }
 
     ehQuadrado(): boolean {
-        if (this.l1 === this.l2){
-            return true;
-        }
+//      if (this.l1 === this.l2){
+//          return true;
+//      }
+//      return false;
 
-        return false;
+        return this.l1 === this.l2;  // melhor forma
     }
 }
 ~~~  
@@ -148,16 +148,18 @@ class SituacaoFinanceira {
     valorDebitos: number = 0;
 
     calcularSaldo(): number {
-        let saldo: number = Number((this.valorCreditos - this.valorDebitos).toFixed(2));
+        let saldo: number = this.valorCreditos - this.valorDebitos;
         return saldo;
     }
 
     situacao(): string {
-        if ((this.calcularSaldo()) >= 0){
+        if ((this.calcularSaldo()) > 0){
             return `Situação Positiva (R$ ${this.calcularSaldo()})`;
+        }else if ((this.calcularSaldo()) < 0){
+            return `Situação Negativa (R$ ${this.calcularSaldo()})`;
+        }else {
+            return `Conta Zerada (R$ ${this.calcularSaldo()})`;
         }
-
-        return `Situação Negativa (R$ ${this.calcularSaldo()})`;
     }
 }
 
@@ -165,8 +167,14 @@ console.clear();
 
 let sf: SituacaoFinanceira = new SituacaoFinanceira;
 sf.valorCreditos = 100;
-sf.valorDebitos = 32.57;
+sf.valorDebitos = 100;
+console.log(sf.situacao());
 
-console.log(sf.calcularSaldo());
+sf.valorCreditos = 100;
+sf.valorDebitos = 90;
+console.log(sf.situacao());
+
+sf.valorCreditos = 70;
+sf.valorDebitos = 100;
 console.log(sf.situacao());
 ~~~
