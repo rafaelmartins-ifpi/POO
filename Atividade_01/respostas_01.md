@@ -141,12 +141,14 @@ console.log (`O Saldo é: ${sf.calcularSaldo()}`);
 Sugestões de Ferramentas: draw.io, plantuml, lucidchart
 
 
-**Circulo**
+|**Circulo**|
 :-----:
 raio:number
-calcularArea()<br/>calcularPerimetro()
+calcularArea()<br>calcularPerimetro()
 
-**SituaçãoFinanceira**
+<br>
+
+|**SituaçãoFinanceira**|
 :-----:
 valorCreditos: number<br/>valorDebitos: number
 calcularSaldo()
