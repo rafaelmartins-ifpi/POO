@@ -1,4 +1,4 @@
-### QUESTÃO 1. Assinale verdadeiro ou falso: 
+### Questão 1. Assinale verdadeiro ou falso: 
 #### ( F )  Objetos são modelos para classes;  
 *Na programação orientada a objetos, classes são modelos para criar objetos, e não o contrário*  
 
